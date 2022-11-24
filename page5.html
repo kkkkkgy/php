@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DMU 맛집 제보</title>
+</head>
+<style>
+    img{
+        padding-left: 20px;
+    }
+    ul{
+        text-align: center;
+        padding: 10px;
+    }
+    li{
+        list-style: none;
+        display: inline;
+        padding: 0 0 50px 50px;
+        font-size: 20px;
+    }
+    main{
+        font-size: 20px;
+    }
+    #review{
+        width : 500px;
+        height : 500px;
+    }
+    nav{
+    	background-color : deepskyblue;
+    }
+    header h1{
+        padding-right: 5%;
+    }
+    aside{
+        text-align: right;
+    }
+</style>
+<script>
+
+</script>
+<body>
+<header><!--<a href="메인 html" --><img src="./img/symbol.jpg" width="80" align="left">
+    <h1 align="center"><!--<a href="메인 html" -->DMU 맛집 제보</h1> <h5 align = "right"><a href="login.html"> 로그인</a> | <a href="signup.html"> 회원가입</a></h5>
+</header>
+<nav>
+    <ul>
+        <li>맛집 리스트</li>
+        <li>|</li>
+        <li>리뷰</li>
+        <li>|</li>
+        <li> <a href="page5.html">맛집제보</a></li>
+    </ul>
+</nav><!-- 수정x-->
+<main>
+  	<form name="page5" action ="page5_result.php" method = "post">
+  	맛집이름<br>
+    <input type="text" name = food_name><br>
+    음식분야<br>
+    <select>
+        <option value="한식">한식</option>
+        <option value="중식">중식</option>
+        <option value="일식">일식</option>
+        <option value="양식">양식</option>
+        <option id="ETC" value="기타">기타</option>
+    </select>
+    <input type="text" id = "food_field" value="기타"><br>
+    개인적인 평점 및 리뷰<br>
+    <input type="textarea" name = personal_review id = "review" ><br>
+    <input type = submit value = "작성완료">
+
+	</form>
+</main>
+</body>
+</html>

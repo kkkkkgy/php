@@ -1,0 +1,19 @@
+nav ul{
+    text-align: center;
+    padding: 10px;
+}
+nav li{
+    list-style: none;
+    display: inline;
+    padding: 0 0 50px 50px;
+    font-size: 20px;
+}
+header h1{
+    padding-right: 5%;
+}
+input{
+    font-size: 15px;
+}
+nav{
+    background-color : deepskyblue;
+}

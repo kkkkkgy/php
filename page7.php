@@ -1,77 +1,69 @@
-<?php
-echo '<!DOCTYPE html>';
-echo '<html lang="en">';
-echo '<head>';
-echo '<meta charset="UTF-8">';
-echo '<meta http-equiv="X-UA-Compatible" content="IE=edge">';
-echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
-echo '<title>Document</title>';
-echo '';
-echo '<style>';
-echo '#title{';
-echo 'text-align: center;';
-echo '}';
-echo '';
-echo '#t1 {';
-echo 'background-color:skyblue;';
-echo 'width:950px;';
-echo 'font-size: 20px;';
-echo '}';
-echo '#t2, .st  {';
-echo 'width:900px;';
-echo 'height:100px;';
-echo 'font-size: 20px;';
-echo 'background-color: gray;';
-echo 'border: 2px solid rgba(5, 5, 179, 0.819);';
-echo 'border-collapse: collapse;';
-echo '';
-echo '}';
-echo 'tr,td{';
-echo 'width:950px;';
-echo 'height:100px;';
-echo 'text-align: center;';
-echo '}';
-echo '';
-echo '</style>';
-echo '</head>';
-echo '<body>';
-echo '<h1 id="title"> DMU 맛집 메뉴</h1>';
-echo '<table id="t1" >';
-echo '<tr >';
-echo '<td> 맛집 리스트</td>';
-echo '<td> 리뷰</td>';
-echo '<td> 맛집 제보</td>';
-echo '</tr>';
-echo '';
-echo '</table>';
-echo '<br><br>';
-echo '';
-echo '<table id="t2">';
-echo '<tr>';
-echo '<td class="st"> 한식</td>';
-echo '<td class="st"> 일식</td>';
-echo '<td class="st"> 중식</td>';
-echo '</tr>';
-echo '';
-echo '<tr>';
-echo '<td class="st"> 커피/음료</td>';
-echo '<td class="st" rowspan="2"> 패스트푸드</td>';
-echo '<td class="st" rowspan="2"> 술집</td>';
-echo '</tr>';
-echo '<tr>';
-echo '<td class="st">기타</td>';
-echo '';
-echo '';
-echo '</tr>';
-echo '';
-echo '';
-echo '';
-echo '';
-echo '</table>';
-echo '';
-echo '';
-echo '';
-echo '</body>';
-echo '</html>';
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DMU 맛집 리스트</title>
+</head>
+<style>
+    img{
+        padding-left: 20px;
+    }
+    ul{
+        text-align: center;
+        padding: 10px;
+    }
+    li{
+        list-style: none;
+        display: inline;
+        padding: 0 0 50px 50px;
+        font-size: 20px;
+    }
+    main{
+        font-size: 20px;
+    }
+    #review{
+        width : 500px;
+        height : 500px;
+    }
+    nav{
+    	background-color : deepskyblue;
+    }
+    header h1{
+        padding-right: 5%;
+    }
+    aside{
+        text-align: right;
+    }
+    th{
+        background-color: #EBF7FF;
+    }
+</style>
+<script>
 
+</script>
+<body>
+<header><!--<a href="메인 html" --><img src="./img/symbol.jpg" width="80" align="left">
+    <h1 align="center"><!--<a href="메인 html" -->DMU 맛집 제보</h1> <h5 align = "right"><a href="login.html"> 로그인</a> | <a href="signup.html"> 회원가입</a></h5>
+</header>
+<nav>
+    <ul>
+        <li><a href="page7.html">맛집 리스트</a></li>
+        <li>|</li>
+        <li>리뷰</li>
+        <li>|</li>
+        <li><a href="page5.html">맛집제보</a></li>
+    </ul>
+</nav><!-- 수정x-->
+<br><br>
+<table border="2" align="center" width="80%" >
+<tr height="200">
+    <th><!--<a href="한식리스트" --><img src="p7kr.png" width="33%" height="33%"><br>한식</th>
+    <th><!--<a href="중식리스트" --><img src="p7ch.png" width="33%" height="33%"><br>중식</th>
+    <th><!--<a href="일식리스트" --><img src="p7jp.png" width="33%" height="33%"><br>일식</th>
+</tr>
+<tr height="200">
+    <th><!--<a href="카페리스트" --><h1>☕🍵🍰🧁</h1><br>카페</th>
+    <th><!--<a href="패스트푸드리스트" --><h1>🍕🍔🍟🌭</h1><br>패스트푸드</th>
+    <th><!--<a href="술집리스트" --><h1>🍾🍺🥂🍷</h1><br>술집</th>
+</tr>
+</table>

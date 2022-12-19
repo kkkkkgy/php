@@ -86,7 +86,7 @@
                     $row = mysqli_fetch_array($result);
                     
                     while($row = mysqli_fetch_array($result)){
-                        echo "<h1>$row["food_name"]<h1>";
+                        echo $row['food_name'];
                         
                         
                         

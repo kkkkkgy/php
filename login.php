@@ -29,12 +29,15 @@
 <?php include "header.html"; ?>
 <main>
 <img src="./img/login.jpg" width="180" align="center"><br>
-아이디<br>
-<input type = text value = "학번"><br>
+    <form method="post" action="login_action.php">아이디<br>
+<input type = text name = 'id' value = "학번"><br>
 비밀번호<br>
-<input type = password value = 1234><br>
+<input type = password name = 'pwd' value = 1234><br>
 <input type = submit value = "로 그 인" id="login_submit"><br>
-<input type = submit value = 회원가입 id = "signup_submit">
+        <a href="signup.php">
+<input type = button value = 회원가입 id = "signup_submit">
+        </a>
+    </form>
 
 </main>
 

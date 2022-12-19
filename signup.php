@@ -36,12 +36,12 @@
   </p>
   <br>
   <p>
-  <form name = "signup" method="get" >
-    <input type="text" id = "ID" value="아이디(학번)" style="margin-left: 73px" onkeydown="OnlyNumericInput(event)"
+  <form name = "signup" method="post" action="signup_action.php" >
+    <input type="text" id = "id" name = "id" value="아이디(학번)" style="margin-left: 73px" onkeydown="OnlyNumericInput(event)"
            onclick="document.getElementById('ID').value = null;"> <!-- 숫자만 입력, 클릭시 초기화-->
-    <input type="button" id = "ID_check" value="중복확인" id="button1"><br>
-    <input type="text" id = "pwd" value="비밀번호" onclick ="document.getElementById('pwd').value = null;"><br>
-    <input type="text" id = "pwd_check" value="비밀번호 확인" onclick= "document.getElementById('pwd_check').value = null;"><br>
+    <input type="button" id = "id_check" name = "id_check" value="중복확인" id="button1"><br>
+    <input type="text" id = "pwd" name = "pwd" value="비밀번호" onclick ="document.getElementById('pwd').value = null;"><br>
+    <input type="text" id = "pwd_check" name = "pwd_check" value="비밀번호 확인" onclick= "document.getElementById('pwd_check').value = null;"><br>
     <input type="submit" id = "signup" value="회원가입" style="size: 30px">
   </p>
   </form>

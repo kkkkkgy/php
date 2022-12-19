@@ -75,7 +75,27 @@
 
     <div class="container">
         <div class="con left">
-            <div class="res name">식당이름</div>
+            <div class="res name">식당이름
+            <?php   //
+                   	$dbname  = "phpproject";
+                    $connect = mysqli_connect("localhost", "root","", "phpproject");
+
+                    $sql = "SELECT food_name FROM restaurant_review";
+                    $result = mysqli_query($connect, $sql);
+
+                    $row = mysqli_fetch_array($result);
+                    
+                    while($row = mysqli_fetch_array($result)){
+                        echo "<h1>$row["food_name"]<h1>";
+                        
+                        
+                        
+                    }
+
+                 ?>
+            </div>
+
+
             <div class="res menu">
                 <div class="res img">
                     
@@ -94,22 +114,24 @@
             <div class="res review" style="overflow-y:scroll;">
                 리뷰
 
-                <?php
-                //    include $_SERVER['DOCUMENT_ROOT'] . '/php/108-2_connectDB.php';
+                <?php   //
+                   	$dbname  = "phpproject";
+                    $connect = mysqli_connect("localhost", "root","", "phpproject");
 
-                //     $sql = "SELECT review, food_type FROM restaurant_review";
-                //     $result = $dbConnect->query($sql);
+                    $sql = "SELECT review FROM restaurant_review";
+                    $result = mysqli_query($connect, $sql);
 
-                //     $dataCount = $result->num_rows;
+                    $row = mysqli_fetch_array($result);
+                    $i = 1;
+                    while($row = mysqli_fetch_array($result)){
+                        echo $row[$i]."번째 리뷰";
+                        echo "<br>";
+                        echo $row['review'];
+                        echo "<hr>";
+                        $i++;
+                    }
 
-                //     for ($i = 0; $i < $dataCount; $i++) {
-                //     $review_res = $result->fetch_array(MYSQLI_ASSOC);
-                //     echo $review_res['food_type'];
-                //     echo "<br>";
-                //     echo " : " . $review_res['review'];
-                //     echo "<hr>";
-                //     }
-                // ?>
+                 ?>
             </div>
         </div> <!--con left end-->
         

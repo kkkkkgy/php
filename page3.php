@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>로그인</title>
+<title>DMU 맛집 제보</title>
 </head>
 <style>
     <?php include "header.css" ?>
@@ -23,107 +23,115 @@
     main{
         padding-top: 0;
     }
+    .rounded {
+          background: silver;
+          height: 50px; width: 200px;
+          border-radius: 15px;
+          line-height: 1rem;
+        }
+         
+        #title{
+            position: relative;
+            margin-left: 25%;
+            margin-bottom: 30px;
+        }
+        #account{
+            position: relative;
+            float: right;
+            margin-right: 35%;
+            transform:translateY(-80%);
+        }
+        #table0{
+            width: 70%;
+            height: 50px;
+            border: 1px solid skyblue;
+            border-collapse: collapse;
+            
+
+
+        }
+        th,.th3,#th3{
+            background-color: skyblue;
+            text-align: center;
+        }
+        #th3{
+           
+            text-align: center;
+        }
+       .contents{
+        display: inline-block;
+       width: 70%;
+       }
+       #conleft{
+        border: 1px solid black;
+        border-radius: 15px;
+        width:15%;
+        height:300px;
+        margin-right: 30px;
+        margin-left: 30px;
+        background-color: #c8c8c8;
+        box-shadow: 3px 3px 3px 3px gray;
+       }
+       #concenter{
+        width:25%;
+        height:300px;
+       }
+       #concenter1{
+        border: 1px solid black;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px 3px gray;
+        height:200px;
+        margin-bottom: 10px;
+        background-color: #c8c8c8;
+       }
+       #concenter2{
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: #c8c8c8;
+        height:90px;
+        box-shadow: 3px 3px 3px 3px gray;
+       }
+       #conright{
+        border: 1px solid black;
+        border-radius: 15px;
+        width:20%;
+        height:300px;
+        margin-right: 30px;
+        background-color: #c8c8c8;
+        margin-left: 30px;
+        box-shadow: 3px 3px 3px 3px gray;
+       }
     </style>
-</style>
+</head>
 <body>
 <?php include "header.html"; ?>
 <main>
-<table border = "1" width = "250" height = "500" align="left" >
-            <caption>맛집랭킹</caption>
-            <thead>
-                <tr align="center" bgcolor=>
-                <th></th>
-                   
-                </tr>
-            </thead>
 
-            <tbody>
-                
-                    <th></th>
-                    
-                </tr>
-                
-                 
-            </tbody>
-        </table>
-        
-        <table border = "1" width = "250" height = "250" align="center" >
-            <caption>점메추</caption>
-            <thead>
-                
-                <th></th>
-                	
-                   
-                </tr>
-            </thead>
+    
+    <!-- 맛집리스트, 리뷰, 맛집 제보 -->
+    
+    <br><br><br>
 
-            <tbody>
-                <tr align="center" bgcolor="white">
-                    <th></th>
-                    
-                </tr>
-                
-                 
-            </tbody>
-        </table>
+ 
+    <div class="contents" id="conleft">
         
-        
-         <table border = "1" width = "250" height = "250" align="center" >
-            <caption></caption>
-            <thead>
-                
-                <th></th>
-                	
-                   
-                </tr>
-            </thead>
+    </div>
+   
+    <div class="contents" id="concenter">
+        <div id="concenter1">  </div>
+        <div id="concenter2">  </div>
 
-            <tbody>
-                <tr align="center" bgcolor="white" align="center">
-                    <th></th>
-                    
-                </tr>
-                
-                 
-            </tbody>
-        </table>
-        
-        
-        <table border = "1" width = "200" height = "300" align="right" >
-            <caption>리뷰</caption>
-            <thead>
-                <tr align="center" bgcolor=>
-                <th></th>
-                   
-                </tr>
-            </thead>
+    </div>
+   
+    <div class="contents" id="conright">
 
-            <tbody>
-                
-                    <th></th>
-                    
-                </tr>
-                
-                 
-            </tbody>
-        </table>
-        
-        
-        
-        
-        
-        
-        
-        
-
-          
-        
-        
+    </div>
+ 
+ </main>
  
  
-
-
-</main>
-
 </body>
+
+
+
 </html>
